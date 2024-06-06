@@ -1,0 +1,25 @@
+<ion-content [fullscreen]="true">
+  <div class="flex-container">
+    <div class="row"> 
+        <div class="flex-item"><img class="Img" src="/assets/imgs/nms_logo_new_final_png.png" /></div>
+        <div class="floating-form">
+          <input class="floating-input" minlength="5" maxlength="50" type="text"
+            placeholder="User Name" [(ngModel)]='userId'>
+      </div>
+      <div class="floating-form">
+          <input class="floating-input" minlength="5" maxlength="50" type="text"
+            placeholder="Password" [(ngModel)]='password' [type]="passwordType">
+      </div>
+      <div style="text-align: center !important;margin-top: 20px">
+        <button class="btn" ion-button (click)="submit()"> Login
+        </button>
+      </div>
+      <div></div>
+      <div>
+        <img class="BgImg" src="/assets/imgs/footer_bg1.png">
+        <img class="CarImg" src="/assets/imgs/volks.gif">
+      </div>
+    </div>
+    
+</div>
+</ion-content>

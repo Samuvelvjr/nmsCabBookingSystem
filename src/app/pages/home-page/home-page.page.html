@@ -1,0 +1,44 @@
+<ion-content [fullscreen]="true">
+  <div class="header">
+    <h1>Hi,<span>{{adminName}}</span></h1>
+    <img src="/assets/imgs/boy.png" class="profile">
+  </div>
+    <ion-card class="card" (click)="todayBooking()">
+      <ion-card-content>
+            <h1 class="todayText">Today Bookings !</h1>
+            <img class="CarIllus" src="../../../assets/imgs/carillus.png">
+      </ion-card-content>
+    </ion-card>
+    <h1>Reports</h1>
+    <div class="row">
+      <div class="column" (click)="cabBookingDtls()">
+        <div class="smallCard1">
+          <p class="para">Cab Booking Reports</p>
+          <!-- <img src="../../../assets/imgs/report(2).png" class="icons"> -->
+          <i class="fa-solid fa-note-sticky"></i>
+        </div>
+      </div>
+    
+      <div class="column" (click)="dateWiseReport()">
+        <div class="smallCard1">
+          <p class="para">Date Wise Reports</p>
+          <i class="fa-solid fa-calendar"></i>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column" (click)="contactFormReport()">
+        <div class="smallCard1">
+          <p class="para">Contact Form Reports</p>
+          <i class="fa-solid fa-mobile-screen"></i>
+        </div>
+      </div>
+    
+      <div class="column" (click)="reviewFormReport()">
+        <div class="smallCard1">
+          <p class="para">Review Form Reports</p>
+          <i class="fa-solid fa-star"></i>
+        </div>
+      </div>
+    </div>
+</ion-content>

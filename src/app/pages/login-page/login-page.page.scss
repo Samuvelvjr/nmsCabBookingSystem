@@ -1,0 +1,107 @@
+.flex-container {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Img {
+    margin-top: 50px;
+    align-items: center;
+    width: 50%;
+}
+.BgImg{
+    margin-bottom: -220px;
+}
+.CarImg {
+    position: relative;
+    animation: mymove 5s infinite;
+  }
+  
+  @keyframes mymove {
+    from {left: -250px;}
+    to {left: 300px;}
+  }
+.CarImg{
+    margin-top: 80px;
+    animation: mymove 5s infinite;
+}
+.flex-item {
+    text-align: center;
+}
+  .floating-form{
+    padding: 0px 10px 0px 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  .floating-input {
+    font-size: 16px !important;
+    font-family: "Rubik", sans-serif;
+    color: #1B1B1B;
+    font-weight: 600;
+    padding: 10px 10px 10px 20px;
+    display: block;
+    width: 85%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    border: 1px solid #757575;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+  }
+  
+  .floating-input:focus {
+    outline: none;
+    position: relative;
+  }
+  
+  .floating-input {
+    height: 58px !important;
+    border-radius: 20px;
+    position: relative;
+  }
+  .btn {
+    align-items: center;
+    background-image: -webkit-linear-gradient(right, #003366, #004080, #0059b3, #0073e6);
+    border: 0;
+    border-radius: 20px;
+    box-shadow: rgba(20, 92, 102, 0.4) 0 2px 4px, rgba(45, 109, 114, 0.4) 0 7px 13px -3px, rgba(25, 143, 143, 0.4) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    height: 52px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    width:50%;
+    margin-bottom: 10px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: transform;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Rubik", sans-serif;
+    padding: 0px 10px 0px 10px;
+  
+  }
+  
+  .btn:hover {
+    transform: translateY(-2px);
+  }
+  
+  .btn:active {
+    transform: translateY(2px);
+  } 
+
+  

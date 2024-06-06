@@ -1,0 +1,63 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar>
+    <ion-title><i class="fa-solid fa-arrow-left" (click)="backButton()"></i>Contact Request</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" >
+  <ion-header collapse="condense" class="ion-no-border">
+    <ion-toolbar>
+      <ion-title><i class="fa-solid fa-arrow-left" (click)="backButton()"></i>Contact Request</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-accordion-group #accordionGroup *ngFor="let item of contactRequestDtl ;">
+    <ion-accordion value="first">
+      <ion-item slot="header">
+        <ion-label>{{item.full_name}}</ion-label>
+        <ion-icon class="ion-accordion-toggle-icon" name="caret-down" slot="end">
+        </ion-icon>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <ion-grid>
+        <ion-row>
+          <ion-col size="5" class="border_design">Customer Name</ion-col>
+          <ion-col size="1">:</ion-col>
+          <ion-col size="6" class="lab">{{item.full_name}}</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="5" class="border_design">Phone Number</ion-col>
+          <ion-col size="1">:</ion-col>
+          <ion-col size="6" class="lab">{{item.phone_no}}</ion-col>
+        </ion-row>
+        <!-- <ion-row>
+          <ion-col class="border_design">Email ID</ion-col>
+          <ion-col>:</ion-col>
+          <ion-col class="lab">sam&#64;gmail.com</ion-col>
+        </ion-row> -->
+        <ion-row>
+          <ion-col size="5" class="border_design">Email ID</ion-col>
+          <ion-col size="1">:</ion-col>
+          <ion-col size="6" class="lab">{{item.email}}</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="5" class="border_design">Message</ion-col>
+          <ion-col size="1">:</ion-col>
+          <ion-col size="6" class="lab">{{item.message}}</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="6"><div style="text-align: center !important;margin-top: 20px">
+            <a href="https://wa.me/{{item.phone_no}}" target="_blank">
+              <button class="btn" ion-button><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp
+            </button>
+          </a>
+          </div></ion-col>
+          <ion-col size="6"><div style="text-align: center !important;margin-top: 20px">
+            <a href="tel:{{item.phone_no}}"><button class="btn" ion-button><ion-icon name="call"></ion-icon> Call
+            </button></a>
+          </div></ion-col>
+        </ion-row>
+      </ion-grid>
+      </div>
+    </ion-accordion>
+  </ion-accordion-group>
+</ion-content>
